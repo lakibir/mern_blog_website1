@@ -46,7 +46,7 @@ const RecentBlog = () => {
     useEffect(() => {
         const getAllPublsihedBlogs = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/v1/blog/get-published-blogs`, { withCredentials: true })
+                const res = await axios.get(`https://mern-blog-website1-tpd1.onrender.com//blog/get-published-blogs`, { withCredentials: true })
                 if (res.data.success) {
                     dispatch(setBlog(res.data.blogs))
                 }
