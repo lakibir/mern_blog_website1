@@ -25,7 +25,7 @@ const CreateBlog = () => {
         
         try {
             setLoading(true)
-            const res = await axios.post(`https://mern-blog-website1-tpd1.onrender.com//blog/`, { title, category }, {
+            const res = await axios.post(`https://mern-blog-website1-tpd1.onrender.com/api/v1//blog/`, { title, category }, {
                 headers: {
                     "Content-Type": "application/json",
                 },

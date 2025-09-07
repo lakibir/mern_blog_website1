@@ -24,7 +24,7 @@ app.use(cookieParser());
 
 // CORS: allow local dev + production
 const allowedOrigins = [
-  process.env.CLIENT_URL || "https://mern-blog-website1-tpd1.onrender.com/",
+  process.env.CLIENT_URL || "https://mern-blog-website1-tpd1.onrender.com",
   `http://localhost:${PORT}`,
 ];
 app.use(cors({ origin: allowedOrigins, credentials: true }));

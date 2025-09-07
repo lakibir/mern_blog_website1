@@ -69,7 +69,7 @@ const Profile = () => {
 
         try {
             setLoading(true)
-            const res = await axios.put(`https://mern-blog-website1-tpd1.onrender.com//user/profile/update`, formData, {
+            const res = await axios.put(`https://mern-blog-website1-tpd1.onrender.com/api/v1//user/profile/update`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 },
